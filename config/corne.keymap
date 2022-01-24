@@ -59,7 +59,7 @@
                 default_layer {
                         bindings = <
    &none &kp Q      &kp W      &kp E       &kp R        &kp T         &kp Y         &kp U        &kp I        &kp O      &kp P         &none
-   &none &mt LCMD A &mt RALT S &mt LCTRL D &mt LSHFT F  &kp G         &kp H         &mt RSHFT J  &mt RCTRL K  &mt RALT L &mt RCMD SEMI &none
+   &none &mt DEL A &mt RALT S &mt LCTRL D &mt LSHFT F  &kp G         &kp H         &mt RSHFT J  &mt RCTRL K  &mt RALT L &mt RCMD SEMI &none
    &none &kp Z      &mt LALT X &kp C       &kp V        &kp B         &kp N         &kp M        &kp COMMA    &kp DOT    &kp FSLH      &none
                                &lt RSE ESC &lt LWR QUOT &kp SPACE     &mt RSHFT RET &lt RSE BSPC &lt LWR TAB
                         >;
@@ -67,7 +67,7 @@
                 lower_layer {
                         bindings = <
    &none &kp N1   &kp N2   &kp N3      &kp N4       &kp N5        &kp N6   &kp N7         &kp N8       &kp N9         &kp N0     &none
-   &none &kp LCMD &kp RALT &kp LCTRL   &kp LSHFT    &none         &kp LEFT &mt RSHFT DOWN &mt RCTRL UP &mt RALT RIGHT &kp RCMD   &none
+   &none &kp DEL &kp RALT &kp LCTRL   &kp LSHFT    &none         &kp LEFT &mt RSHFT DOWN &mt RCTRL UP &mt RALT RIGHT &kp RCMD   &none
    &none &none    &kp LALT &none       &kp Y        &none         &kp HOME &kp PG_DN      &kp PG_UP    &mt LALT END   &caps_word &none
                            &lt RSE ESC &lt LWR QUOT &kp SPACE     &mt RSHFT RET &mo RSE &lt LWR TAB
                         >;
@@ -75,7 +75,7 @@
                 raise_layer {
                         bindings = <
    &none &kp EXCL    &kp AT      &kp HASH     &kp DLLR     &kp PRCNT       &kp CARET     &kp AMPS        &kp KP_MULTIPLY &kp LPAR      &kp RPAR      &none
-   &none &mt LCMD F1 &mt RALT F2 &mt LCTRL F3 &mt LSHFT F4 &kp F5          &kp MINUS     &mt RSHFT EQUAL &mt RCTRL LBKT  &mt RALT RBKT &mt RCMD BSLH &none
+   &none &mt DEL F1 &mt RALT F2 &mt LCTRL F3 &mt LSHFT F4 &kp F5          &kp MINUS     &mt RSHFT EQUAL &mt RCTRL LBKT  &mt RALT RBKT &mt RCMD BSLH &none
    &none &kp F6      &mt LALT F7 &kp F8       &kp F9       &kp F10         &kp UNDER     &kp PLUS        &kp LBRC        &kp RBRC      &kp PIPE      &none
                                  &lt RSE ESC  &mo LWR      &kp GRAVE       &mt RSHFT RET &lt RSE BSPC    &lt LWR TAB
                         >;
