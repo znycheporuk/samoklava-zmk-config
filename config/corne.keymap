@@ -105,7 +105,7 @@
             label = "PASS";
             #binding-cells = <0>;
             bindings =
-                <&kp X>,
+                <&kp C>,
                 <&macro_press>,
                 <&kp N0 &kp N4 &kp N0 &kp N3 &kp LS(S) &kp LS(H) &kp A &kp D>;
         };
