@@ -109,6 +109,15 @@
                 <&macro_press>,
                 <&kp N0 &kp N4 &kp N0 &kp N3 &kp LS(S) &kp LS(H) &kp A &kp D>;
         };
+        lock: lock {
+            compatible = "zmk,behavior-macro";
+            label = "LOCK";
+            #binding-cells = <0>;
+            bindings =
+                <&kp COMMA>,
+                <&macro_press>,
+                <&kp LGUI &kp L>;
+        };
     };
 
     keymap {
