@@ -51,7 +51,8 @@
                           26            30 31 32 33 34
                              36 37 38   39 40 41
             >;
-// <---[[right-hand keys + all homerow mods + all thumbs]]
+
+            // <---[[right-hand keys + all homerow mods + all thumbs]]
         };
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
@@ -70,19 +71,20 @@
                        25 26 27 28 29            33
                              36 37 38   39 40 41
             >;
-// <---[[left-hand keys + all homerow mods + all thumbs]]
+
+            // <---[[left-hand keys + all homerow mods + all thumbs]]
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        esc {
             bindings = <&kp ESC>;
             key-positions = <1 13>;
         };
 
-        new_combo {
+        tab {
             bindings = <&kp TAB>;
             key-positions = <25 13>;
         };
@@ -94,6 +96,18 @@
         tri_layer {
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
+        };
+    };
+
+    macros {
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            label = "PASS";
+            #binding-cells = <0>;
+            bindings =
+                <&kp X>,
+                <&macro_press>,
+                <&kp N0 &kp N4 &kp N0 &kp N3 &kp LS(S) &kp LS(H) &kp A &kp D>;
         };
     };
 
