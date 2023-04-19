@@ -74,6 +74,16 @@
 
             // <---[[left-hand keys + all homerow mods + all thumbs]]
         };
+        lock: lock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LOCK";
+            #binding-cells = <0>;
+            bindings =
+                <&kp SPACE>,
+                <&kp K_LOCK>;
+
+            tapping-term-ms = <100>;
+        };
     };
 
     combos {
@@ -88,6 +98,16 @@
             bindings = <&kp TAB>;
             key-positions = <25 13>;
         };
+
+        backspase {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <10 22>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <22 34>;
+        };
     };
 
     conditional_layers {
@@ -100,24 +120,6 @@
     };
 
     macros {
-        pass: pass {
-            compatible = "zmk,behavior-macro";
-            label = "PASS";
-            #binding-cells = <0>;
-            bindings =
-                <&kp C>,
-                <&macro_press>,
-                <&kp N0 &kp N4 &kp N0 &kp N3 &kp LS(S) &kp LS(H) &kp A &kp D>;
-        };
-        lock: lock {
-            compatible = "zmk,behavior-macro";
-            label = "LOCK";
-            #binding-cells = <0>;
-            bindings =
-                <&kp COMMA>,
-                <&macro_press>,
-                <&kp LGUI &kp L>;
-        };
     };
 
     keymap {
@@ -125,19 +127,19 @@
 
         default_layer {
             bindings = <
-&none        &kp Q        &kp W         &kp E         &kp R            &kp T            &kp Y         &kp U         &kp I          &kp O           &kp P  &none
-&none  &hml LCMD A  &hml RALT S  &hml LCTRL D  &hml LSHFT F            &kp G            &kp H  &hmr RSHFT J  &hmr RCTRL K    &hmr RALT L  &hmr RCMD SEMI  &none
-&none        &kp Z  &hml LALT X         &kp C         &kp V            &kp B            &kp N         &kp M     &kp COMMA  &hmr LALT DOT        &kp FSLH  &none
-                                  &lt 1 GRAVE     &lt 2 DEL  &mt LCTRL SPACE    &mt RSHFT RET    &lt 2 LBKT    &lt 1 RBKT
+&none        &kp Q        &kp W         &kp E            &kp R  &kp T            &kp Y         &kp U         &kp I          &kp O           &kp P  &none
+&none  &hml LCMD A  &hml RALT S  &hml LCTRL D     &hml LSHFT F  &kp G            &kp H  &hmr RSHFT J  &hmr RCTRL K    &hmr RALT L  &hmr RCMD SEMI  &none
+&none        &kp Z  &hml LALT X         &kp C            &kp V  &kp B            &kp N         &kp M     &kp COMMA  &hmr LALT DOT        &kp FSLH  &none
+                                  &lt 1 GRAVE  &lt 2 BACKSPACE  &lock    &mt RSHFT RET    &lt 2 LBKT    &lt 1 RBKT
             >;
         };
 
         lower_layer {
             bindings = <
-&none    &kp N1    &kp N2       &kp N3        &kp N4     &kp N5           &kp N6           &kp N7         &kp N8           &kp N9      &kp N0  &none
-&none  &kp LCMD  &kp RALT    &kp LCTRL     &kp LSHFT      &none         &kp LEFT  &hmr RSHFT DOWN  &hmr RCTRL UP  &hmr RALT RIGHT    &kp RCMD  &none
-&none     &none  &kp LALT        &none         &kp Y      &none         &kp HOME        &kp PG_DN      &kp PG_UP    &hmr LALT END  &caps_word  &none
-                           &lt RSE ESC  &lt LWR QUOT  &kp SPACE    &mt RSHFT RET          &mo RSE    &lt LWR TAB
+&none    &kp N1    &kp N2       &kp N3        &kp N4     &kp N5         &kp HOME    &kp UP    &kp PG_UP         &kp N9      &kp N0  &none
+&none  &kp LCMD  &kp RALT    &kp LCTRL     &kp LSHFT      &none         &kp LEFT  &kp DOWN    &kp RIGHT          &none    &kp RCMD  &none
+&none     &none  &kp LALT        &none         &kp Y      &none          &kp END     &none    &kp PG_DN  &hmr LALT END  &caps_word  &none
+                           &lt RSE ESC  &lt LWR QUOT  &kp SPACE    &mt RSHFT RET   &mo RSE  &lt LWR TAB
             >;
         };
 
