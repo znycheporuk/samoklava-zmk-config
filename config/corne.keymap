@@ -79,7 +79,7 @@
             label = "LOCK";
             #binding-cells = <0>;
             bindings =
-                <&kp SPACE>,
+                <&mt LCTRL SPACE>,
                 <&kp K_LOCK>;
 
             tapping-term-ms = <200>;
