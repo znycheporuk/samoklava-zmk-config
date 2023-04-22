@@ -146,8 +146,8 @@
         raise_layer {
             bindings = <
 &none      &kp EXCL        &kp AT       &kp HASH       &kp DLLR  &kp PRCNT        &kp EQUAL         &kp NUMBER_7         &kp NUMBER_8        &kp NUMBER_9        &kp GRAVE  &none
-&none  &hml LCMD F1  &hml RALT F2  &hml LCTRL F3  &hml LSHFT F4     &kp F5        &kp MINUS  &hmr RSHFT NUMBER_4  &hmr RCTRL NUMBER_5  &hmr RALT NUMBER_6  &hmr RCMD UNDER  &none
-&none        &kp F6  &hml LALT F7         &kp F8         &kp F9    &kp F10     &kp NUMBER_0         &kp NUMBER_1         &kp NUMBER_2        &kp NUMBER_3         &kp BSLH  &none
+&none  &hml LCMD F1  &hml RALT F2  &hml LCTRL F3  &hml LSHFT F2     &kp F5        &kp MINUS  &hmr RSHFT NUMBER_4  &hmr RCTRL NUMBER_5  &hmr RALT NUMBER_6  &hmr RCMD UNDER  &none
+&none        &kp F6  &hml LALT F7         &kp F8        &kp F11    &kp F12     &kp NUMBER_0         &kp NUMBER_1         &kp NUMBER_2        &kp NUMBER_3         &kp BSLH  &none
                                      &lt RSE ESC        &mo LWR  &kp GRAVE    &mt RSHFT RET         &lt RSE BSPC          &lt LWR TAB
             >;
         };
