@@ -80,7 +80,7 @@
             label = "LOCK";
             #binding-cells = <0>;
             bindings =
-                <&mt LCTRL SPACE>,
+                <&lt 2 SPACE>,
                 <&kp K_LOCK>;
 
             tapping-term-ms = <200>;
@@ -90,7 +90,7 @@
             label = "LANG";
             #binding-cells = <0>;
             bindings =
-                <&mt RIGHT_SHIFT ENTER>,
+                <&lt 2 ENTER>,
                 <&lang_m>;
         };
     };
