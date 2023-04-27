@@ -79,7 +79,7 @@
             label = "LOCK";
             #binding-cells = <0>;
             bindings =
-                <&mt LCTRL SPACE>,
+                <&lt 2 SPACE>,
                 <&kp K_LOCK>;
 
             tapping-term-ms = <200>;
@@ -89,7 +89,7 @@
             label = "LANG";
             #binding-cells = <0>;
             bindings =
-                <&mt RIGHT_SHIFT ENTER>,
+                <&lt 2 ENTER>,
                 <&lang_m>;
         };
     };
@@ -147,10 +147,10 @@
 
         default_layer {
             bindings = <
-&none        &kp Q        &kp W             &kp E            &kp R  &kp T    &kp Y         &kp U         &kp I          &kp O           &kp P  &none
-&none  &hml LCMD A  &hml RALT S      &hml LCTRL D     &hml LSHFT F  &kp G    &kp H  &hmr RSHFT J  &hmr RCTRL K    &hmr RALT L  &hmr RCMD SEMI  &none
-&none        &kp Z  &hml LALT X             &kp C            &kp V  &kp B    &kp N         &kp M     &kp COMMA  &hmr LALT DOT        &kp FSLH  &none
-                                 &lt 1 APOSTROPHE  &lt 2 BACKSPACE  &lock    &lang    &lt 2 LBKT    &lt 1 RBKT
+&none        &kp Q        &kp W           &kp E         &kp R  &kp T    &kp Y             &kp U         &kp I          &kp O           &kp P  &none
+&none  &hml LCMD A  &hml RALT S    &hml LCTRL D  &hml LSHFT F  &kp G    &kp H      &hmr RSHFT J  &hmr RCTRL K    &hmr RALT L  &hmr RCMD SEMI  &none
+&none        &kp Z  &hml LALT X           &kp C         &kp V  &kp B    &kp N             &kp M     &kp COMMA  &hmr LALT DOT        &kp FSLH  &none
+                                 &mt LCTRL LBKT    &lt 1 RBKT  &lock    &lang  &lt 1 APOSTROPHE    &lt 1 RBKT
             >;
         };
 
