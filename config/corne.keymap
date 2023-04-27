@@ -84,6 +84,14 @@
 
             tapping-term-ms = <200>;
         };
+        lang: lang {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LANG";
+            #binding-cells = <0>;
+            bindings =
+                <&mt RIGHT_SHIFT ENTER>,
+                <&lang_m>;
+        };
     };
 
     combos {
@@ -120,6 +128,12 @@
     };
 
     macros {
+        lang_m: lang_m {
+            compatible = "zmk,behavior-macro";
+            label = "LANG_M";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp SPACE>;
+        };
     };
 
     keymap {
@@ -127,10 +141,10 @@
 
         default_layer {
             bindings = <
-&none        &kp Q        &kp W             &kp E            &kp R  &kp T            &kp Y         &kp U         &kp I          &kp O           &kp P  &none
-&none  &hml LCMD A  &hml RALT S      &hml LCTRL D     &hml LSHFT F  &kp G            &kp H  &hmr RSHFT J  &hmr RCTRL K    &hmr RALT L  &hmr RCMD SEMI  &none
-&none        &kp Z  &hml LALT X             &kp C            &kp V  &kp B            &kp N         &kp M     &kp COMMA  &hmr LALT DOT        &kp FSLH  &none
-                                 &lt 1 APOSTROPHE  &lt 2 BACKSPACE  &lock    &mt RSHFT RET    &lt 2 LBKT    &lt 1 RBKT
+&none        &kp Q        &kp W             &kp E            &kp R  &kp T    &kp Y         &kp U         &kp I          &kp O           &kp P  &none
+&none  &hml LCMD A  &hml RALT S      &hml LCTRL D     &hml LSHFT F  &kp G    &kp H  &hmr RSHFT J  &hmr RCTRL K    &hmr RALT L  &hmr RCMD SEMI  &none
+&none        &kp Z  &hml LALT X             &kp C            &kp V  &kp B    &kp N         &kp M     &kp COMMA  &hmr LALT DOT        &kp FSLH  &none
+                                 &lt 1 APOSTROPHE  &lt 2 BACKSPACE  &lock    &lang    &lt 2 LBKT    &lt 1 RBKT
             >;
         };
 
