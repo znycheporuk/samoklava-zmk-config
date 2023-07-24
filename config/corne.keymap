@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT 0
 #define LOWER   1
@@ -156,10 +156,10 @@
 
         lower_layer {
             bindings = <
-&none    &kp N1    &kp N2       &kp N3        &kp N4     &kp N5         &kp HOME    &kp UP    &kp PG_UP         &kp N9      &kp N0  &none
-&none  &kp LCMD  &kp RALT    &kp LCTRL     &kp LSHFT      &none         &kp LEFT  &kp DOWN    &kp RIGHT          &none    &kp RCMD  &none
-&none     &none  &kp LALT        &none         &kp Y      &none          &kp END     &none    &kp PG_DN  &hmr LALT END  &caps_word  &none
-                           &lt RSE ESC  &lt LWR QUOT  &kp SPACE    &mt RSHFT RET   &mo RSE  &lt LWR TAB
+&none    &kp N1    &kp N2       &kp N3        &kp N4       &kp N5         &kp HOME    &kp UP    &kp PG_UP         &kp N9      &kp N0  &none
+&none  &kp LCMD  &kp RALT    &kp LCTRL     &kp LSHFT        &none         &kp LEFT  &kp DOWN    &kp RIGHT          &none    &kp RCMD  &none
+&none     &none  &kp LALT        &none         &kp Y        &none          &kp END     &none    &kp PG_DN  &hmr LALT END  &caps_word  &none
+                           &lt RSE ESC  &lt LWR QUOT  &lt 2 SPACE    &mt RSHFT RET   &mo RSE  &lt LWR TAB
             >;
         };
 
@@ -168,7 +168,7 @@
 &none      &kp EXCL        &kp AT       &kp HASH       &kp DLLR  &kp PRCNT        &kp EQUAL         &kp NUMBER_7         &kp NUMBER_8        &kp NUMBER_9        &kp GRAVE  &none
 &none  &hml LCMD F1  &hml RALT F2  &hml LCTRL F3  &hml LSHFT F2     &kp F5        &kp MINUS  &hmr RSHFT NUMBER_4  &hmr RCTRL NUMBER_5  &hmr RALT NUMBER_6  &hmr RCMD MINUS  &none
 &none        &kp F6  &hml LALT F7         &kp F8        &kp F11    &kp F12     &kp NUMBER_0         &kp NUMBER_1         &kp NUMBER_2        &kp NUMBER_3         &kp BSLH  &none
-                                     &lt RSE ESC        &mo LWR  &kp GRAVE    &mt RSHFT RET         &lt RSE BSPC          &lt LWR TAB
+                                     &lt RSE ESC    &lt 1 ENTER  &kp GRAVE    &mt RSHFT RET         &lt RSE BSPC          &lt LWR TAB
             >;
         };
 
