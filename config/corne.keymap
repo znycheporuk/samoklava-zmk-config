@@ -95,21 +95,25 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 13>;
+            layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <25 13>;
+            layers = <0>;
         };
 
         backspase {
             bindings = <&kp BACKSPACE>;
             key-positions = <10 22>;
+            layers = <0>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <22 34>;
+            layers = <0>;
         };
     };
 
@@ -142,9 +146,9 @@
 
         default_layer {
             bindings = <
-&none  &kp Q        &kp W        &kp F                &kp P         &kp B    &kp J  &kp L         &kp U         &kp Y          &kp SEMICOLON  &none
-&none  &hml LCMD A  &hml RALT R  &hml LCTRL S         &hml LSHFT T  &kp G    &kp M  &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I    &hmr RCMD SQT  &none
-&none  &kp Z        &hml LALT X  &kp C                &kp D         &kp V    &kp K  &kp H         &kp COMMA     &hmr LALT DOT  &kp FSLH       &none
+&none  &kp Q        &kp W        &kp F                &kp P         &kp B    &kp J  &kp L         &kp U         &kp Y          &kp SINGLE_QUOTE  &none
+&none  &hml LCMD A  &hml RALT R  &hml LCTRL S         &hml LSHFT T  &kp G    &kp M  &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I    &hmr RCMD O       &none
+&none  &kp Z        &hml LALT X  &kp C                &kp D         &kp V    &kp K  &kp H         &kp COMMA     &hmr LALT DOT  &kp FSLH          &none
                                  &mt LCTRL BACKSPACE  &lt 1 DELETE  &lock    &lang  &lt 1 ENTER   &kp SPACE
             >;
         };
