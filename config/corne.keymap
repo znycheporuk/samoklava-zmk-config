@@ -150,7 +150,7 @@
 &none  &kp Q        &kp W        &kp F         &kp P         &kp B        &kp J        &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &none
 &none  &hml LCMD A  &hml RALT R  &hml LCTRL S  &hml LSHFT T  &kp G        &kp M        &hmr RSHFT N     &hmr RCTRL E  &hmr RALT I  &hmr RCMD O       &none
 &none  &kp Z        &hml LALT X  &kp C         &kp D         &kp V        &kp K        &kp H            &kp COMMA     &kp DOT      &kp FSLH          &none
-                                 &lt 0 ESCAPE  &lt 2 SPACE   &lt 0 TAB    &lt 0 ENTER  &lt 1 BACKSPACE  &lt 0 DELETE
+                                 &lt 2 ESCAPE  &lt 3 SPACE   &lt 0 TAB    &lt 0 ENTER  &lt 1 BACKSPACE  &lt 0 DELETE
             >;
         };
 
@@ -178,6 +178,24 @@
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &lock     &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT  &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &trans
                             &trans     &trans     &trans    &trans      &trans       &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
