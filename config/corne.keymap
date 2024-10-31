@@ -121,8 +121,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 1>;
-            then-layer = <1>;
+            if-layers = <3 3>;
+            then-layer = <3>;
         };
     };
 
@@ -149,7 +149,7 @@
 &none  &kp Q        &kp W        &kp F         &kp P         &kp B        &kp J        &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &none
 &none  &hml LCMD A  &hml RALT R  &hml LCTRL S  &hml LSHFT T  &kp G        &kp M        &hmr RSHFT N     &hmr RCTRL E  &hmr RALT I  &hmr RCMD O       &none
 &none  &kp Z        &hml LALT X  &kp C         &kp D         &kp V        &kp K        &kp H            &kp COMMA     &kp DOT      &kp FSLH          &none
-                                 &lt 0 ESCAPE  &lt 1 SPACE   &lt 0 TAB    &lt 0 ENTER  &lt 0 BACKSPACE  &lt 0 DELETE
+                                 &lt 0 ESCAPE  &lt 1 SPACE   &lt 0 TAB    &lt 0 ENTER  &lt 2 BACKSPACE  &lt 0 DELETE
             >;
         };
 
@@ -159,6 +159,15 @@
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT  &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &trans
                             &trans     &trans     &trans    &trans      &trans       &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&trans  &kp MINUS     &kp N1  &kp N2   &kp N3     &kp LS(STAR)    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp LS(PLUS)  &kp N4  &kp N5   &kp N6     &kp N0          &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
+&trans  &kp EQUAL     &kp N7  &kp N8   &kp N9     &kp FSLH        &trans  &trans     &trans     &trans    &trans    &trans
+                              &kp ESC  &kp SPACE  &kp TAB         &trans  &trans     &trans
             >;
         };
     };
