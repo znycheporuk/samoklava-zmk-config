@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LOCK";
             #binding-cells = <0>;
-            bindings = <&lt 6 SPACE>, <&kp K_LOCK>;
+            bindings = <&lt 0 SPACE>, <&kp K_LOCK>;
 
             tapping-term-ms = <200>;
         };
@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LANG";
             #binding-cells = <0>;
-            bindings = <&lt 6 ENTER>, <&lang_m>;
+            bindings = <&lt 0 ENTER>, <&lang_m>;
         };
     };
 
@@ -95,25 +95,21 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <2 14>;
-            layers = <6>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <14 26>;
-            layers = <6>;
         };
 
         backspase {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 21>;
-            layers = <6>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <33 21>;
-            layers = <6>;
         };
 
         toggle-num {
@@ -122,9 +118,9 @@
         };
 
         toggle-qwerty {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <1 2 3>;
-            layers = <0 7>;
+            layers = <0 6>;
         };
     };
 
@@ -206,15 +202,6 @@
 &none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &tog 5  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
 &none  &none  &kp F7  &kp F8  &kp F9  &kp F12    &none   &none      &none      &none     &none     &none
                       &trans  &trans  &trans     &trans  &trans     &trans
-            >;
-        };
-
-        colemak {
-            bindings = <
-&none  &kp Q        &kp W        &kp F         &kp P         &kp B        &kp J        &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &none
-&none  &hml LCMD A  &hml RALT R  &hml LCTRL S  &hml LSHFT T  &kp G        &kp M        &hmr RSHFT N     &hmr RCTRL E  &hmr RALT I  &hmr RCMD O       &none
-&none  &kp Z        &hml LALT X  &kp C         &kp D         &kp V        &kp K        &kp H            &kp COMMA     &kp DOT      &kp FSLH          &none
-                                 &lt 2 ESCAPE  &lt 3 SPACE   &lt 6 TAB    &lt 4 ENTER  &lt 1 BACKSPACE  &lt 5 DELETE
             >;
         };
 
