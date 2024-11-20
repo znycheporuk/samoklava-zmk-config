@@ -122,7 +122,7 @@
         };
 
         toggle-qwerty {
-            bindings = <&to 7>;
+            bindings = <&tog 7>;
             key-positions = <1 2 3>;
             layers = <0 7>;
         };
