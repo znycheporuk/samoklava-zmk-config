@@ -1,0 +1,185 @@
+# Generated reference card for config/corne.keymap.
+# Physical geometry in docs/samoklava-layout.json was measured from a photo
+# of the actual board: 36 keys, 3x5+3, column stagger (pinky -> inner index)
+# 0.84 / 0.20 / 0.00 / 0.23 / 0.38 u, thumbs on a descending arc.
+#
+# Regenerate:
+#   keymap parse -z config/corne.keymap > /tmp/kd.yaml   # then re-apply the
+#   # 36-key trim (drop indices 0,11,12,23,24,35) and layer renames, or just
+#   # hand-edit this file
+#   keymap draw docs/keymap-drawer.yaml > docs/keymap.svg
+layout:
+  qmk_info_json: docs/samoklava-layout.json
+layers:
+  BASE  —  Graphite:
+  - B
+  - L
+  - D
+  - W
+  - Z
+  - ''''
+  - F
+  - O
+  - U
+  - J
+  - t: N
+    h: LEFT GUI
+  - t: R
+    h: LEFT ALT
+  - t: T
+    h: LCTRL
+  - t: S
+    h: LSHFT
+  - G
+  - Y
+  - t: H
+    h: RSHFT
+  - t: A
+    h: RCTRL
+  - t: E
+    h: RALT
+  - t: I
+    h: RGUI
+  - Q
+  - X
+  - M
+  - C
+  - V
+  - K
+  - P
+  - .
+  - ','
+  - /
+  - ESC
+  - t: SPACE
+    h: NAV
+  - TAB
+  - t: ENTER
+    h: SYM
+  - t: BACKSPACE
+    h: NUM
+  - DEL
+  NAV  —  hold LEFT-MIDDLE thumb:
+  - 'BT CLR
+
+    (erase)'
+  - BT 0
+  - BT 1
+  - BT 2
+  - ''
+  - ''
+  - '['
+  - ']'
+  - ''
+  - '⌘Space
+
+    (lang)'
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - CAPS
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - t: ▽
+    type: trans
+  - type: held
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  SYM  —  hold RIGHT-INNER thumb:
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
+  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - (
+  - )
+  - _
+  - type: held
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  NUM  —  hold RIGHT-MIDDLE thumb:
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ;
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - .
+  - '0'
+  - '-'
+  - t: ▽
+    type: trans
+  - type: held
+  - t: ▽
+    type: trans
